@@ -33,6 +33,8 @@
 		2E4166021F1CC30D0034A34C /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E4166011F1CC30D0034A34C /* libstdc++.tbd */; };
 		2E4166041F1CC3170034A34C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E4166031F1CC3170034A34C /* libz.tbd */; };
 		2E4166071F1CC3660034A34C /* UIApplication+MLSocialExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4166061F1CC3660034A34C /* UIApplication+MLSocialExtention.m */; };
+		2E41660F1F1CCC4D0034A34C /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E41660A1F1CCC4D0034A34C /* libWeChatSDK.a */; };
+		2E4166101F1CCC4D0034A34C /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2E41660B1F1CCC4D0034A34C /* README.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +103,11 @@
 		2E4166031F1CC3170034A34C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		2E4166051F1CC3660034A34C /* UIApplication+MLSocialExtention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+MLSocialExtention.h"; sourceTree = "<group>"; };
 		2E4166061F1CC3660034A34C /* UIApplication+MLSocialExtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+MLSocialExtention.m"; sourceTree = "<group>"; };
+		2E41660A1F1CCC4D0034A34C /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		2E41660B1F1CCC4D0034A34C /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		2E41660C1F1CCC4D0034A34C /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		2E41660D1F1CCC4D0034A34C /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		2E41660E1F1CCC4D0034A34C /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +119,7 @@
 				2E4166021F1CC30D0034A34C /* libstdc++.tbd in Frameworks */,
 				2E4166001F1CC2FF0034A34C /* CoreTelephony.framework in Frameworks */,
 				2E4165FE1F1CC2F90034A34C /* libsqlite3.tbd in Frameworks */,
+				2E41660F1F1CCC4D0034A34C /* libWeChatSDK.a in Frameworks */,
 				2E4165FC1F1CC2F00034A34C /* CoreGraphics.framework in Frameworks */,
 				2E4165FA1F1CC2E90034A34C /* SystemConfiguration.framework in Frameworks */,
 				2E4165F81F1CC2E30034A34C /* libiconv.tbd in Frameworks */,
@@ -223,6 +231,7 @@
 		2E4165B91F1CA39A0034A34C /* SDKs */ = {
 			isa = PBXGroup;
 			children = (
+				2E4166091F1CCC4D0034A34C /* Wechat */,
 				2E4165F21F1CC2B30034A34C /* TencentOpenAPI.framework */,
 			);
 			path = SDKs;
@@ -343,6 +352,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2E4166091F1CCC4D0034A34C /* Wechat */ = {
+			isa = PBXGroup;
+			children = (
+				2E41660A1F1CCC4D0034A34C /* libWeChatSDK.a */,
+				2E41660B1F1CCC4D0034A34C /* README.txt */,
+				2E41660C1F1CCC4D0034A34C /* WechatAuthSDK.h */,
+				2E41660D1F1CCC4D0034A34C /* WXApi.h */,
+				2E41660E1F1CCC4D0034A34C /* WXApiObject.h */,
+			);
+			path = Wechat;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -451,6 +472,7 @@
 			files = (
 				2E4165921F1C9D3A0034A34C /* LaunchScreen.storyboard in Resources */,
 				2E41658F1F1C9D3A0034A34C /* Assets.xcassets in Resources */,
+				2E4166101F1CCC4D0034A34C /* README.txt in Resources */,
 				2E41658D1F1C9D3A0034A34C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -643,6 +665,10 @@
 				);
 				INFOPLIST_FILE = SocialSDKDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SocialSDK/SDKs/Wechat",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Allan.SocialSDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -659,6 +685,10 @@
 				);
 				INFOPLIST_FILE = SocialSDKDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SocialSDK/SDKs/Wechat",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Allan.SocialSDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
