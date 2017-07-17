@@ -10,4 +10,16 @@
 
 @implementation MLWeChatShare
 
++ (void)load {
+    [[MLSocialManager defaultManager] addShareChannelWithChannelType:[MLWeChatShare channelType] channel:[MLWeChatShare class]];
+}
+
++ (MLPlatformType)platformType {
+    return MLPlatformTypeWeChat;
+}
+
++ (MLShareChannelType)channelType {
+    return MLShareChannelTypeWechat;
+}
+
 @end

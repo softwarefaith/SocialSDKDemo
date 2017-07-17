@@ -35,6 +35,7 @@
 		2E4166071F1CC3660034A34C /* UIApplication+MLSocialExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4166061F1CC3660034A34C /* UIApplication+MLSocialExtention.m */; };
 		2E41660F1F1CCC4D0034A34C /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E41660A1F1CCC4D0034A34C /* libWeChatSDK.a */; };
 		2E4166101F1CCC4D0034A34C /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2E41660B1F1CCC4D0034A34C /* README.txt */; };
+		2E4166131F1CCEB00034A34C /* MLWeChatFriendsCircleShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4166121F1CCEB00034A34C /* MLWeChatFriendsCircleShare.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +109,8 @@
 		2E41660C1F1CCC4D0034A34C /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
 		2E41660D1F1CCC4D0034A34C /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		2E41660E1F1CCC4D0034A34C /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		2E4166111F1CCEB00034A34C /* MLWeChatFriendsCircleShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MLWeChatFriendsCircleShare.h; path = Wechat/MLWeChatFriendsCircleShare.h; sourceTree = "<group>"; };
+		2E4166121F1CCEB00034A34C /* MLWeChatFriendsCircleShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MLWeChatFriendsCircleShare.m; path = Wechat/MLWeChatFriendsCircleShare.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -303,6 +306,8 @@
 			children = (
 				2E4165CC1F1CA58B0034A34C /* MLWeChatShare.h */,
 				2E4165CD1F1CA58B0034A34C /* MLWeChatShare.m */,
+				2E4166111F1CCEB00034A34C /* MLWeChatFriendsCircleShare.h */,
+				2E4166121F1CCEB00034A34C /* MLWeChatFriendsCircleShare.m */,
 			);
 			name = Wechat;
 			sourceTree = "<group>";
@@ -506,6 +511,7 @@
 				2E4166071F1CC3660034A34C /* UIApplication+MLSocialExtention.m in Sources */,
 				2E4165EC1F1CC0420034A34C /* MLQQPlatformConfig.m in Sources */,
 				2E4165C91F1CA55C0034A34C /* MLQQShare.m in Sources */,
+				2E4166131F1CCEB00034A34C /* MLWeChatFriendsCircleShare.m in Sources */,
 				2E4165EF1F1CC0680034A34C /* MLWechatPlatformConfig.m in Sources */,
 				2E4165CE1F1CA58B0034A34C /* MLWeChatShare.m in Sources */,
 				2E4165E91F1CBAFD0034A34C /* MLPlatformConfig.m in Sources */,
@@ -759,6 +765,7 @@
 				2E4165AE1F1C9D3A0034A34C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E4165AF1F1C9D3A0034A34C /* Build configuration list for PBXNativeTarget "SocialSDKDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -767,6 +774,7 @@
 				2E4165B11F1C9D3A0034A34C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E4165B21F1C9D3A0034A34C /* Build configuration list for PBXNativeTarget "SocialSDKDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -775,6 +783,7 @@
 				2E4165B41F1C9D3A0034A34C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

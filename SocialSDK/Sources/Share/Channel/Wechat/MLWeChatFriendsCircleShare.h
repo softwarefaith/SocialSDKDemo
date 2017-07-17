@@ -1,5 +1,5 @@
 //
-//  MLWeChatShare.h
+//  MLWeChatFriendsCircleShare.h
 //  SocialSDKDemo
 //
 //  Created by 蔡杰 on 2017/7/17.
@@ -8,8 +8,6 @@
 
 #import "MLChannelShare.h"
 
-//发送给朋友分享
-
-@interface MLWeChatShare : MLChannelShare
+@interface MLWeChatFriendsCircleShare : MLChannelShare
 
 @end

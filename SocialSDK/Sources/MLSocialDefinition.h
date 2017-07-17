@@ -27,8 +27,8 @@ typedef NS_ENUM (NSInteger,MLPlatformType){
 typedef NS_ENUM (NSInteger,MLShareChannelType){
     MLShareChannelTypeNone,//未定义渠道
     MLShareChannelTypeQQ,//QQ聊天分享
-    MLShareChannelTypeWechatSession,//微信聊天分享
-    MLShareChannelTypeWechatTimeLine//微信朋友圈分享
+    MLShareChannelTypeWechat,//微信聊天分享
+    MLShareChannelTypeWechatFriendsCircle//微信朋友圈分享
 };
 
 #endif /* MLSocialDefinition_h */
