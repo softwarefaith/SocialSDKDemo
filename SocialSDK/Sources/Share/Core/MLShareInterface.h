@@ -9,6 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "MLSocialDefinition.h"
 #import "MLHandleInterface.h"
+#import "MLShareResultInterface.h"
+#import "MLShareResult.h"
+
+typedef void (^MLShareCompletionBlock) (id<MLShareResultInterface> result);
 
 @protocol MLShareInterface <NSObject,MLHandleInterface>
 
@@ -22,5 +26,7 @@
 - (void)shareSingleImage:(id)image title:(NSString *)title description:(NSString *)description;
 
 - (void)shareURL:(NSString *)url title:(NSString *)title description:(NSString *)description thumbnail:(id)thumbnail;
+
+- (void)setShareCompletionBlock:(MLShareCompletionBlock)completionBlock;
 
 @end

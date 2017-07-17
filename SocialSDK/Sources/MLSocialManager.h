@@ -22,6 +22,7 @@
 
 - (void)addShareChannelWithChannelType:(MLShareChannelType)channelType channel:(Class)channel;
 
+//配置各平台初始化 没有传nil
 - (void)setPlaform:(MLPlatformType)platform appKey:(NSString *)appKey  appSecret:(NSString *)appSecret redirectURL:(NSString *)redirectURL;
 
 @end

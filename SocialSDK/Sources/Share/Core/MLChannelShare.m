@@ -8,7 +8,9 @@
 
 #import "MLChannelShare.h"
 
-@implementation MLChannelShare
+@implementation MLChannelShare {
+    MLShareCompletionBlock _completionBlock;
+}
 
 + (MLPlatformType)platformType {
     return MLPlatformTypeNone;
@@ -29,6 +31,19 @@
 
 - (void)shareURL:(NSString *)url title:(NSString *)title description:(NSString *)description thumbnail:(id)thumbnail {
     
+}
+
+- (void)setShareCompletionBlock:(MLShareCompletionBlock)completionBlock
+{
+    _completionBlock = [completionBlock copy];
+}
+
+- (void)completionWithResult:(id<MLShareResultInterface>)result
+{
+    if (_completionBlock) {
+        _completionBlock(result);
+    }
+    _completionBlock = nil;
 }
 
 @end
