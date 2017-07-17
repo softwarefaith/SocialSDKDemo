@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "MLShareInterface.h"
+#import "MLSocialManager.h"
 
 @interface MLChannelShare : NSObject<MLShareInterface>
 

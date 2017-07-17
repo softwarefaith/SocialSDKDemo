@@ -15,7 +15,9 @@
 
 @implementation MLSocialManager {
     
-     NSMutableDictionary <NSNumber *, id<MLPlatformConfigInterface>> *_platforms;
+     NSMutableDictionary <NSNumber *, id<MLPlatformConfigInterface>> *_platformConfig;
+    
+     NSMutableDictionary <NSNumber *, Class>* _platforms;
 }
 
 + (instancetype)defaultManager {
@@ -31,6 +33,7 @@
 
 - (instancetype)init {
     if (self == [super init]) {
+        _platformConfig = [[NSMutableDictionary alloc] init];
         _platforms = [[NSMutableDictionary alloc] init];
     }
     return self;
@@ -38,7 +41,17 @@
 
 
 - (void)addPlatformWithPlatformType:(MLPlatformType)platformType platform:(id<MLPlatformConfigInterface>)platform {
-     _platforms[@(platformType)] = platform;
+    if (platform == MLPlatformTypeNone) {
+        return;
+    }
+     _platformConfig[@(platformType)] = platform;
+}
+
+- (void)addShareChannelWithChannelType:(MLShareChannelType)channelType channel:(Class)channel {
+    if (channelType == MLShareChannelTypeNone) {
+        return;
+    }
+    _platforms[@(channelType)] = channel;
 }
 
 
@@ -53,7 +66,7 @@
                                  kMLSocial_appSecret:appSecret,
                                  kMLSocial_redirectURL: redirectURL
                             };
-    [_platforms[@(p)] configurePara:config];
+    [_platformConfig[@(p)] configurePara:config];
 }
 
 @end

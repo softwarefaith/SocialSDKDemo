@@ -7,12 +7,17 @@
 //
 
 #import "MLQQPlatformConfig.h"
+#import <TencentOpenAPI/TencentOAuth.h>
+#import <TencentOpenAPI/QQApiInterface.h>
 
 @interface MLQQPlatformConfig ()
 
 @end
 
-@implementation MLQQPlatformConfig
+@implementation MLQQPlatformConfig {
+    
+     TencentOAuth *_oauth;
+}
 
 
 + (void)load {
@@ -28,11 +33,11 @@
 
 + (BOOL)isInstalled {
     
-    return YES;
+     return [QQApiInterface isQQInstalled];;
 }
 
 - (void)configurePara:(NSDictionary *)para {
-    
+     _oauth = [[TencentOAuth alloc] initWithAppId:para[kMLSocial_appKey] andDelegate:nil];
 }
 
 @end

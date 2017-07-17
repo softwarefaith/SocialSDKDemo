@@ -23,6 +23,16 @@
 		2E4165E91F1CBAFD0034A34C /* MLPlatformConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4165E81F1CBAFD0034A34C /* MLPlatformConfig.m */; };
 		2E4165EC1F1CC0420034A34C /* MLQQPlatformConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4165EB1F1CC0420034A34C /* MLQQPlatformConfig.m */; };
 		2E4165EF1F1CC0680034A34C /* MLWechatPlatformConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4165EE1F1CC0680034A34C /* MLWechatPlatformConfig.m */; };
+		2E4165F31F1CC2B30034A34C /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E4165F21F1CC2B30034A34C /* TencentOpenAPI.framework */; };
+		2E4165F61F1CC2D90034A34C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E4165F51F1CC2D90034A34C /* Security.framework */; };
+		2E4165F81F1CC2E30034A34C /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E4165F71F1CC2E30034A34C /* libiconv.tbd */; };
+		2E4165FA1F1CC2E90034A34C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E4165F91F1CC2E90034A34C /* SystemConfiguration.framework */; };
+		2E4165FC1F1CC2F00034A34C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E4165FB1F1CC2F00034A34C /* CoreGraphics.framework */; };
+		2E4165FE1F1CC2F90034A34C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E4165FD1F1CC2F90034A34C /* libsqlite3.tbd */; };
+		2E4166001F1CC2FF0034A34C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E4165FF1F1CC2FF0034A34C /* CoreTelephony.framework */; };
+		2E4166021F1CC30D0034A34C /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E4166011F1CC30D0034A34C /* libstdc++.tbd */; };
+		2E4166041F1CC3170034A34C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E4166031F1CC3170034A34C /* libz.tbd */; };
+		2E4166071F1CC3660034A34C /* UIApplication+MLSocialExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4166061F1CC3660034A34C /* UIApplication+MLSocialExtention.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +90,17 @@
 		2E4165EB1F1CC0420034A34C /* MLQQPlatformConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MLQQPlatformConfig.m; path = QQ/MLQQPlatformConfig.m; sourceTree = "<group>"; };
 		2E4165ED1F1CC0680034A34C /* MLWechatPlatformConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MLWechatPlatformConfig.h; path = wechat/MLWechatPlatformConfig.h; sourceTree = "<group>"; };
 		2E4165EE1F1CC0680034A34C /* MLWechatPlatformConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MLWechatPlatformConfig.m; path = wechat/MLWechatPlatformConfig.m; sourceTree = "<group>"; };
+		2E4165F21F1CC2B30034A34C /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
+		2E4165F51F1CC2D90034A34C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2E4165F71F1CC2E30034A34C /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		2E4165F91F1CC2E90034A34C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2E4165FB1F1CC2F00034A34C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2E4165FD1F1CC2F90034A34C /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		2E4165FF1F1CC2FF0034A34C /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		2E4166011F1CC30D0034A34C /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		2E4166031F1CC3170034A34C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		2E4166051F1CC3660034A34C /* UIApplication+MLSocialExtention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+MLSocialExtention.h"; sourceTree = "<group>"; };
+		2E4166061F1CC3660034A34C /* UIApplication+MLSocialExtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+MLSocialExtention.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +108,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E4166041F1CC3170034A34C /* libz.tbd in Frameworks */,
+				2E4166021F1CC30D0034A34C /* libstdc++.tbd in Frameworks */,
+				2E4166001F1CC2FF0034A34C /* CoreTelephony.framework in Frameworks */,
+				2E4165FE1F1CC2F90034A34C /* libsqlite3.tbd in Frameworks */,
+				2E4165FC1F1CC2F00034A34C /* CoreGraphics.framework in Frameworks */,
+				2E4165FA1F1CC2E90034A34C /* SystemConfiguration.framework in Frameworks */,
+				2E4165F81F1CC2E30034A34C /* libiconv.tbd in Frameworks */,
+				2E4165F61F1CC2D90034A34C /* Security.framework in Frameworks */,
+				2E4165F31F1CC2B30034A34C /* TencentOpenAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,11 +140,14 @@
 		2E4165761F1C9D3A0034A34C = {
 			isa = PBXGroup;
 			children = (
+				2E4166051F1CC3660034A34C /* UIApplication+MLSocialExtention.h */,
+				2E4166061F1CC3660034A34C /* UIApplication+MLSocialExtention.m */,
 				2E4165B71F1CA39A0034A34C /* SocialSDK */,
 				2E4165811F1C9D3A0034A34C /* SocialSDKDemo */,
 				2E41659B1F1C9D3A0034A34C /* SocialSDKDemoTests */,
 				2E4165A61F1C9D3A0034A34C /* SocialSDKDemoUITests */,
 				2E4165801F1C9D3A0034A34C /* Products */,
+				2E4165F41F1CC2D90034A34C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -190,6 +223,7 @@
 		2E4165B91F1CA39A0034A34C /* SDKs */ = {
 			isa = PBXGroup;
 			children = (
+				2E4165F21F1CC2B30034A34C /* TencentOpenAPI.framework */,
 			);
 			path = SDKs;
 			sourceTree = "<group>";
@@ -292,6 +326,21 @@
 				2E4165EE1F1CC0680034A34C /* MLWechatPlatformConfig.m */,
 			);
 			name = WeChat;
+			sourceTree = "<group>";
+		};
+		2E4165F41F1CC2D90034A34C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E4166031F1CC3170034A34C /* libz.tbd */,
+				2E4166011F1CC30D0034A34C /* libstdc++.tbd */,
+				2E4165FF1F1CC2FF0034A34C /* CoreTelephony.framework */,
+				2E4165FD1F1CC2F90034A34C /* libsqlite3.tbd */,
+				2E4165FB1F1CC2F00034A34C /* CoreGraphics.framework */,
+				2E4165F91F1CC2E90034A34C /* SystemConfiguration.framework */,
+				2E4165F71F1CC2E30034A34C /* libiconv.tbd */,
+				2E4165F51F1CC2D90034A34C /* Security.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,6 +481,7 @@
 				2E4165C31F1CA4610034A34C /* MLShareResult.m in Sources */,
 				2E4165DD1F1CB7240034A34C /* MLSocialManager.m in Sources */,
 				2E4165871F1C9D3A0034A34C /* AppDelegate.m in Sources */,
+				2E4166071F1CC3660034A34C /* UIApplication+MLSocialExtention.m in Sources */,
 				2E4165EC1F1CC0420034A34C /* MLQQPlatformConfig.m in Sources */,
 				2E4165C91F1CA55C0034A34C /* MLQQShare.m in Sources */,
 				2E4165EF1F1CC0680034A34C /* MLWechatPlatformConfig.m in Sources */,
@@ -586,6 +636,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SocialSDK",
+					"$(PROJECT_DIR)/SocialSDK/SDKs",
+				);
 				INFOPLIST_FILE = SocialSDKDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Allan.SocialSDKDemo;
@@ -597,6 +652,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SocialSDK",
+					"$(PROJECT_DIR)/SocialSDK/SDKs",
+				);
 				INFOPLIST_FILE = SocialSDKDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Allan.SocialSDKDemo;

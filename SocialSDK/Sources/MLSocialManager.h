@@ -20,6 +20,8 @@
 
 - (void)addPlatformWithPlatformType:(MLPlatformType)platformType platform:(id<MLPlatformConfigInterface>)platform;
 
+- (void)addShareChannelWithChannelType:(MLShareChannelType)channelType channel:(Class)channel;
+
 - (void)setPlaform:(MLPlatformType)platform appKey:(NSString *)appKey  appSecret:(NSString *)appSecret redirectURL:(NSString *)redirectURL;
 
 @end
