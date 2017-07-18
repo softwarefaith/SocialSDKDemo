@@ -25,4 +25,8 @@
 //配置各平台初始化 没有传nil
 - (void)setPlaform:(MLPlatformType)platform appKey:(NSString *)appKey  appSecret:(NSString *)appSecret redirectURL:(NSString *)redirectURL;
 
+- (BOOL)handleOpenURL:(NSURL *)url;
+
+- (void)clearHandle;
+
 @end

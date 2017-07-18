@@ -15,6 +15,21 @@
 #define kMLQQ_appID @"1105959755"
 #define kMLQQ_appKey @"uDxiIPgZAiB8alRZ"
 
+//.配置ApplicationQueriesSchemes
+
+//QQ “Other Linker Flags”配置项添加属性值“-fobjc-arc”。
+
+
+/*
+ <key>LSApplicationQueriesSchemes</key>
+ <array>
+ <!-- 微信 URL Scheme 白名单-->
+ <string>wechat</string>
+ <string>weixin</string>
+ 
+ 
+ */
+
 
 @interface UIApplication (MLSocialExtention)
 

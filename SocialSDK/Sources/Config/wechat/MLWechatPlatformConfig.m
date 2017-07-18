@@ -7,6 +7,7 @@
 //
 
 #import "MLWechatPlatformConfig.h"
+#import "WXApi.h"
 
 @implementation MLWechatPlatformConfig
 
@@ -23,11 +24,13 @@
 
 + (BOOL)isInstalled {
     
-    return YES;
+    return [WXApi isWXAppInstalled];
 }
 
 - (void)configurePara:(NSDictionary *)para {
-    
+     [WXApi registerApp:para[kMLSocial_appKey]];
 }
+
+
 
 @end

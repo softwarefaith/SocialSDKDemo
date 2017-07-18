@@ -36,6 +36,7 @@
 		2E41660F1F1CCC4D0034A34C /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E41660A1F1CCC4D0034A34C /* libWeChatSDK.a */; };
 		2E4166101F1CCC4D0034A34C /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2E41660B1F1CCC4D0034A34C /* README.txt */; };
 		2E4166131F1CCEB00034A34C /* MLWeChatFriendsCircleShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4166121F1CCEB00034A34C /* MLWeChatFriendsCircleShare.m */; };
+		2EC657C11F1DB74B00BFCC25 /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2EC657C01F1DB74B00BFCC25 /* TencentOpenApi_IOS_Bundle.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,7 @@
 		2E41660E1F1CCC4D0034A34C /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		2E4166111F1CCEB00034A34C /* MLWeChatFriendsCircleShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MLWeChatFriendsCircleShare.h; path = Wechat/MLWeChatFriendsCircleShare.h; sourceTree = "<group>"; };
 		2E4166121F1CCEB00034A34C /* MLWeChatFriendsCircleShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MLWeChatFriendsCircleShare.m; path = Wechat/MLWeChatFriendsCircleShare.m; sourceTree = "<group>"; };
+		2EC657C01F1DB74B00BFCC25 /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +238,7 @@
 			children = (
 				2E4166091F1CCC4D0034A34C /* Wechat */,
 				2E4165F21F1CC2B30034A34C /* TencentOpenAPI.framework */,
+				2EC657C01F1DB74B00BFCC25 /* TencentOpenApi_IOS_Bundle.bundle */,
 			);
 			path = SDKs;
 			sourceTree = "<group>";
@@ -478,6 +481,7 @@
 				2E4165921F1C9D3A0034A34C /* LaunchScreen.storyboard in Resources */,
 				2E41658F1F1C9D3A0034A34C /* Assets.xcassets in Resources */,
 				2E4166101F1CCC4D0034A34C /* README.txt in Resources */,
+				2EC657C11F1DB74B00BFCC25 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				2E41658D1F1C9D3A0034A34C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -675,6 +679,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/SocialSDK/SDKs/Wechat",
 				);
+				OTHER_LDFLAGS = (
+					"-fobjc-arc",
+					"-Objc",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Allan.SocialSDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -694,6 +702,10 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SocialSDK/SDKs/Wechat",
+				);
+				OTHER_LDFLAGS = (
+					"-fobjc-arc",
+					"-Objc",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Allan.SocialSDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

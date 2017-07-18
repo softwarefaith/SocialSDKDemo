@@ -44,6 +44,8 @@
         _completionBlock(result);
     }
     _completionBlock = nil;
+    
+    [[MLSocialManager defaultManager] clearHandle];
 }
 
 @end
