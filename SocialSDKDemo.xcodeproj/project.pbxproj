@@ -37,6 +37,7 @@
 		2E4166101F1CCC4D0034A34C /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2E41660B1F1CCC4D0034A34C /* README.txt */; };
 		2E4166131F1CCEB00034A34C /* MLWeChatFriendsCircleShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4166121F1CCEB00034A34C /* MLWeChatFriendsCircleShare.m */; };
 		2EC657C11F1DB74B00BFCC25 /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2EC657C01F1DB74B00BFCC25 /* TencentOpenApi_IOS_Bundle.bundle */; };
+		2EC657C41F1DD8FE00BFCC25 /* MLSocialItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC657C31F1DD8FE00BFCC25 /* MLSocialItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,8 @@
 		2E4166111F1CCEB00034A34C /* MLWeChatFriendsCircleShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MLWeChatFriendsCircleShare.h; path = Wechat/MLWeChatFriendsCircleShare.h; sourceTree = "<group>"; };
 		2E4166121F1CCEB00034A34C /* MLWeChatFriendsCircleShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MLWeChatFriendsCircleShare.m; path = Wechat/MLWeChatFriendsCircleShare.m; sourceTree = "<group>"; };
 		2EC657C01F1DB74B00BFCC25 /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
+		2EC657C21F1DD8FE00BFCC25 /* MLSocialItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSocialItem.h; sourceTree = "<group>"; };
+		2EC657C31F1DD8FE00BFCC25 /* MLSocialItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSocialItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +294,8 @@
 		2E4165BE1F1CA39A0034A34C /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				2EC657C21F1DD8FE00BFCC25 /* MLSocialItem.h */,
+				2EC657C31F1DD8FE00BFCC25 /* MLSocialItem.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -509,6 +514,7 @@
 			files = (
 				2E4165C61F1CA4D20034A34C /* MLChannelShare.m in Sources */,
 				2E41658A1F1C9D3A0034A34C /* ViewController.m in Sources */,
+				2EC657C41F1DD8FE00BFCC25 /* MLSocialItem.m in Sources */,
 				2E4165C31F1CA4610034A34C /* MLShareResult.m in Sources */,
 				2E4165DD1F1CB7240034A34C /* MLSocialManager.m in Sources */,
 				2E4165871F1C9D3A0034A34C /* AppDelegate.m in Sources */,
