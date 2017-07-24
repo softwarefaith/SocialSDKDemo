@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "UIApplication+MLSocialExtention.h"
+#import "MLSocialManager.h"
 @interface AppDelegate ()
 
 @end
@@ -17,7 +18,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [UIApplication applicationSocialConfig];
     return YES;
+}
+
+
+-(BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    
+   return  [[MLSocialManager defaultManager] handleOpenURL:url];
 }
 
 

@@ -36,6 +36,11 @@
 		2E41660F1F1CCC4D0034A34C /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E41660A1F1CCC4D0034A34C /* libWeChatSDK.a */; };
 		2E4166101F1CCC4D0034A34C /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2E41660B1F1CCC4D0034A34C /* README.txt */; };
 		2E4166131F1CCEB00034A34C /* MLWeChatFriendsCircleShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4166121F1CCEB00034A34C /* MLWeChatFriendsCircleShare.m */; };
+		2E748D261F25901400A84EFB /* MLSoicalUIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E748D251F25901400A84EFB /* MLSoicalUIManager.m */; };
+		2E748D291F25BA1100A84EFB /* MLSocialSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E748D281F25BA1100A84EFB /* MLSocialSelectView.m */; };
+		2E748D2C1F25BEC000A84EFB /* MLSocialResourse.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2E748D2B1F25BEC000A84EFB /* MLSocialResourse.bundle */; };
+		2E748D331F25E28C00A84EFB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E748D321F25E28C00A84EFB /* CFNetwork.framework */; };
+		2E748D371F26001200A84EFB /* social_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E748D361F26001200A84EFB /* social_logo@2x.png */; };
 		2EC657C11F1DB74B00BFCC25 /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2EC657C01F1DB74B00BFCC25 /* TencentOpenApi_IOS_Bundle.bundle */; };
 		2EC657C41F1DD8FE00BFCC25 /* MLSocialItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC657C31F1DD8FE00BFCC25 /* MLSocialItem.m */; };
 /* End PBXBuildFile section */
@@ -113,6 +118,14 @@
 		2E41660E1F1CCC4D0034A34C /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		2E4166111F1CCEB00034A34C /* MLWeChatFriendsCircleShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MLWeChatFriendsCircleShare.h; path = Wechat/MLWeChatFriendsCircleShare.h; sourceTree = "<group>"; };
 		2E4166121F1CCEB00034A34C /* MLWeChatFriendsCircleShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MLWeChatFriendsCircleShare.m; path = Wechat/MLWeChatFriendsCircleShare.m; sourceTree = "<group>"; };
+		2E748D241F25901400A84EFB /* MLSoicalUIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSoicalUIManager.h; sourceTree = "<group>"; };
+		2E748D251F25901400A84EFB /* MLSoicalUIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSoicalUIManager.m; sourceTree = "<group>"; };
+		2E748D271F25BA1100A84EFB /* MLSocialSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSocialSelectView.h; sourceTree = "<group>"; };
+		2E748D281F25BA1100A84EFB /* MLSocialSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSocialSelectView.m; sourceTree = "<group>"; };
+		2E748D2A1F25BAE500A84EFB /* MLSocialSelectInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSocialSelectInterface.h; sourceTree = "<group>"; };
+		2E748D2B1F25BEC000A84EFB /* MLSocialResourse.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MLSocialResourse.bundle; sourceTree = "<group>"; };
+		2E748D321F25E28C00A84EFB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		2E748D361F26001200A84EFB /* social_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "social_logo@2x.png"; sourceTree = "<group>"; };
 		2EC657C01F1DB74B00BFCC25 /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
 		2EC657C21F1DD8FE00BFCC25 /* MLSocialItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSocialItem.h; sourceTree = "<group>"; };
 		2EC657C31F1DD8FE00BFCC25 /* MLSocialItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSocialItem.m; sourceTree = "<group>"; };
@@ -123,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E748D331F25E28C00A84EFB /* CFNetwork.framework in Frameworks */,
 				2E4166041F1CC3170034A34C /* libz.tbd in Frameworks */,
 				2E4166021F1CC30D0034A34C /* libstdc++.tbd in Frameworks */,
 				2E4166001F1CC2FF0034A34C /* CoreTelephony.framework in Frameworks */,
@@ -180,6 +194,7 @@
 		2E4165811F1C9D3A0034A34C /* SocialSDKDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2E748D361F26001200A84EFB /* social_logo@2x.png */,
 				2E4165851F1C9D3A0034A34C /* AppDelegate.h */,
 				2E4165861F1C9D3A0034A34C /* AppDelegate.m */,
 				2E4165881F1C9D3A0034A34C /* ViewController.h */,
@@ -232,6 +247,7 @@
 		2E4165B81F1CA39A0034A34C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2E748D2B1F25BEC000A84EFB /* MLSocialResourse.bundle */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -294,8 +310,14 @@
 		2E4165BE1F1CA39A0034A34C /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				2E748D2D1F25CE9600A84EFB /* Util */,
+				2E748D241F25901400A84EFB /* MLSoicalUIManager.h */,
+				2E748D251F25901400A84EFB /* MLSoicalUIManager.m */,
 				2EC657C21F1DD8FE00BFCC25 /* MLSocialItem.h */,
 				2EC657C31F1DD8FE00BFCC25 /* MLSocialItem.m */,
+				2E748D2A1F25BAE500A84EFB /* MLSocialSelectInterface.h */,
+				2E748D271F25BA1100A84EFB /* MLSocialSelectView.h */,
+				2E748D281F25BA1100A84EFB /* MLSocialSelectView.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -353,6 +375,7 @@
 		2E4165F41F1CC2D90034A34C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2E748D321F25E28C00A84EFB /* CFNetwork.framework */,
 				2E4166031F1CC3170034A34C /* libz.tbd */,
 				2E4166011F1CC30D0034A34C /* libstdc++.tbd */,
 				2E4165FF1F1CC2FF0034A34C /* CoreTelephony.framework */,
@@ -375,6 +398,13 @@
 				2E41660E1F1CCC4D0034A34C /* WXApiObject.h */,
 			);
 			path = Wechat;
+			sourceTree = "<group>";
+		};
+		2E748D2D1F25CE9600A84EFB /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -444,6 +474,7 @@
 				TargetAttributes = {
 					2E41657E1F1C9D3A0034A34C = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = ZL2593GNNF;
 						ProvisioningStyle = Automatic;
 					};
 					2E4165971F1C9D3A0034A34C = {
@@ -484,10 +515,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E4165921F1C9D3A0034A34C /* LaunchScreen.storyboard in Resources */,
+				2E748D371F26001200A84EFB /* social_logo@2x.png in Resources */,
 				2E41658F1F1C9D3A0034A34C /* Assets.xcassets in Resources */,
 				2E4166101F1CCC4D0034A34C /* README.txt in Resources */,
 				2EC657C11F1DB74B00BFCC25 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				2E41658D1F1C9D3A0034A34C /* Main.storyboard in Resources */,
+				2E748D2C1F25BEC000A84EFB /* MLSocialResourse.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,6 +548,7 @@
 				2E4165C61F1CA4D20034A34C /* MLChannelShare.m in Sources */,
 				2E41658A1F1C9D3A0034A34C /* ViewController.m in Sources */,
 				2EC657C41F1DD8FE00BFCC25 /* MLSocialItem.m in Sources */,
+				2E748D261F25901400A84EFB /* MLSoicalUIManager.m in Sources */,
 				2E4165C31F1CA4610034A34C /* MLShareResult.m in Sources */,
 				2E4165DD1F1CB7240034A34C /* MLSocialManager.m in Sources */,
 				2E4165871F1C9D3A0034A34C /* AppDelegate.m in Sources */,
@@ -525,6 +559,7 @@
 				2E4165EF1F1CC0680034A34C /* MLWechatPlatformConfig.m in Sources */,
 				2E4165CE1F1CA58B0034A34C /* MLWeChatShare.m in Sources */,
 				2E4165E91F1CBAFD0034A34C /* MLPlatformConfig.m in Sources */,
+				2E748D291F25BA1100A84EFB /* MLSocialSelectView.m in Sources */,
 				2E4165841F1C9D3A0034A34C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -674,22 +709,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZL2593GNNF;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SocialSDK",
 					"$(PROJECT_DIR)/SocialSDK/SDKs",
 				);
 				INFOPLIST_FILE = SocialSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SocialSDK/SDKs/Wechat",
 				);
 				OTHER_LDFLAGS = (
-					"-fobjc-arc",
 					"-Objc",
+					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Allan.SocialSDKDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mljr.pdloanML;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -698,22 +735,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZL2593GNNF;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SocialSDK",
 					"$(PROJECT_DIR)/SocialSDK/SDKs",
 				);
 				INFOPLIST_FILE = SocialSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SocialSDK/SDKs/Wechat",
 				);
 				OTHER_LDFLAGS = (
-					"-fobjc-arc",
 					"-Objc",
+					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Allan.SocialSDKDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mljr.pdloanML;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

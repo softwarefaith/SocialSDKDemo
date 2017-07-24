@@ -69,14 +69,30 @@
     if (platform == MLPlatformTypeNone) {
         return;
     }
+    
+    if (!([appKey length] > 0)) {
+        return;
+    }
+    
     MLPlatformType p = platform;
     NSDictionary *config = @{
                                  kMLSocial_appKey: appKey,
-                                 kMLSocial_appSecret:appSecret,
-                                 kMLSocial_redirectURL: redirectURL
+                                 kMLSocial_appSecret:appSecret?:@"",
+                                 kMLSocial_redirectURL: redirectURL?:@""
                             };
     [_platformConfig[@(p)] configurePara:config];
 }
+
+- (id<MLShareInterface>)getShareProtocolWithChannelType:(MLShareChannelType)channelType
+{
+    id<MLShareInterface> res = [[(Class)_platforms[@(channelType)] alloc] init];
+    [[MLSocialManager defaultManager] setHandle:res];
+    if (!res) {
+        NSLog(@"未载入该平台");
+    }
+    return res;
+}
+
 
 #pragma mark - Handle
 - (void)setHandle:(id<MLHandleInterface>)handle {

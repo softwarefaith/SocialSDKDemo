@@ -10,4 +10,18 @@
 
 @implementation MLSocialItem
 
+- (instancetype)initWithImagePath:(NSString *)path title:(NSString *)title resourceType:(MLResourceType)type{
+    
+    if (self = [super init]) {
+        _imagePath = path;
+        _title = title;
+        _resourceType = type;
+    }
+    return self;
+}
+
++(instancetype)createSocialItemWithImagePath:(NSString *)path title:(NSString *)title resourceType:(MLResourceType)type{
+    
+    return [[MLSocialItem alloc] initWithImagePath:path title:title resourceType:type] ;
+}
 @end

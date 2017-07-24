@@ -18,6 +18,7 @@
 + (instancetype)defaultManager;
 
 
+// 注册函数  - load 函数动态注册
 - (void)addPlatformWithPlatformType:(MLPlatformType)platformType platform:(id<MLPlatformConfigInterface>)platform;
 
 - (void)addShareChannelWithChannelType:(MLShareChannelType)channelType channel:(Class)channel;
@@ -28,5 +29,8 @@
 - (BOOL)handleOpenURL:(NSURL *)url;
 
 - (void)clearHandle;
+
+- (id<MLShareInterface>)getShareProtocolWithChannelType:(MLShareChannelType)channelType;
+
 
 @end

@@ -84,8 +84,7 @@
 }
 
 #pragma mark - WXApiDelegate
-- (void)onResp:(BaseResp *)resp
-{
+- (void)onResp:(BaseResp *)resp {
     [self completionWithResult:[self createResultWithResponse:resp]];
 }
 

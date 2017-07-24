@@ -7,7 +7,18 @@
 //
 
 #import "UIApplication+MLSocialExtention.h"
+#import "MLSocialManager.h"
 
 @implementation UIApplication (MLSocialExtention)
+
++ (void)applicationSocialConfig {
+    
+    
+    [[MLSocialManager defaultManager] setPlaform:MLPlatformTypeQQ appKey:kMLQQ_appID appSecret:kMLQQ_appKey redirectURL:nil];
+    
+       [[MLSocialManager defaultManager] setPlaform:MLPlatformTypeWeChat appKey:kMLWechat_appKey appSecret:nil redirectURL:nil];
+    
+    
+}
 
 @end

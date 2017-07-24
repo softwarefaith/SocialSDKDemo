@@ -7,13 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
-
-typedef void(^ExecuteBlock)();
+#import "MLSocialSelectInterface.h"
 
 @interface MLSocialItem : NSObject
 
-@property(nonatomic, copy) NSString *image;
+@property(nonatomic, copy) NSString *imagePath;
 @property(nonatomic, copy) NSString *title;
-@property(nonatomic, copy) ExecuteBlock execute;
+@property(nonatomic, assign) MLResourceType resourceType;
+
+- (instancetype)initWithImagePath:(NSString *)path title:(NSString *)title resourceType:(MLResourceType)type;
+
++ (instancetype)createSocialItemWithImagePath:(NSString *)path title:(NSString *)title resourceType:(MLResourceType)type;
 
 @end

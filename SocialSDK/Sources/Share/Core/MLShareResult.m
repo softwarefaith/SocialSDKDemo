@@ -38,4 +38,9 @@
     return res;
 }
 
+- (NSString *)description {
+    
+    return [NSString stringWithFormat:@"%zd == %@  == %@",_status,_message,_soucreMessage];
+}
+
 @end

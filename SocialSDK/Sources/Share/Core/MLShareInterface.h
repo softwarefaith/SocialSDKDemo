@@ -29,4 +29,6 @@ typedef void (^MLShareCompletionBlock) (id<MLShareResultInterface> result);
 
 - (void)setShareCompletionBlock:(MLShareCompletionBlock)completionBlock;
 
+
+
 @end
